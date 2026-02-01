@@ -347,3 +347,32 @@ body {
     font-size: 1.8rem;
   }
 }
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-text {
+    margin-bottom: 20px;
+  }
+
+  .hero-image img {
+    width: 180px;
+    height: 180px;
+  }
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-links {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+body {
+  overflow-x: hidden;
+}
