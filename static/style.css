@@ -382,3 +382,33 @@ body {
 body {
   overflow-x: hidden;
 }
+@media (max-width: 768px) {
+  .hero::before,
+  .hero::after,
+  .vertical-line,
+  .divider {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-text h1,
+  .hero-text h2,
+  .hero-text p {
+    text-align: center;
+  }
+
+  .hero-text button {
+    margin: 0 auto;
+    display: block;
+  }
+}
