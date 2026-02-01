@@ -324,3 +324,26 @@ li{
 .email-link:hover {
   text-decoration: underline;
 }
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+}
