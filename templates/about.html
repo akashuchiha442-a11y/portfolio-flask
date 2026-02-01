@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet"href="{{ url_for('static',filename='style.css')}}">
+</head>
+<body>
+    {% extends 'base.html' %}
+{% block content %}
+    <section class="about-section">
+  <h2>Education</h2>
+
+  <div class="item">
+    <h3>SSLC – 85.2%</h3>
+    <p>Pothihai Public HR Sec School, Thisayanvilai</p>
+  </div>
+
+  <div class="item">
+    <h3>HSC – 73.6%</h3>
+    <p>Pothihai Public HR Sec School, Thisayanvilai</p>
+  </div>
+
+  <div class="item">
+    <h3>CGPA – 7.76</h3>
+    <p>VV College of Engineering (CSE, 2022–2026)</p>
+  </div>
+  </section>
+  <section class="about-section">
+    <h2>Skills</h2>
+  <div class="skills">
+  <span>Python</span>
+  <span>HTML</span>
+  <span>CSS</span>
+  <span>Flask</span>
+</div>
+  </section>
+<section class="about-section">
+  <h2>Internship</h2>
+  <div class="internship">
+    <span>Python intern at <strong>Icanio Tech School(June - July)</strong>.Gaind hands on experince in <strong>Python coding and team collaboration</strong>.</span>
+  </div>
+</section>
+<section class="about-section">
+  <h2>Languages</h2>
+<ul class="language-list">
+  <li>Tamil – Native</li>
+  <li>English – Business level</li>
+  <li>Japanese – Basic (JLPT N5 Certified, Persuing JLPT N4)</li>
+</ul>
+</section>
+<section class="about-section">
+  <h2>Hobbies</h2>
+  <ul class="Hobbies-list">
+    <li>Reading Books</li>
+    <li>Learning New Languages</li>
+  </ul>
+</section>
+     
+{% endblock %}
+</body>
+</html>

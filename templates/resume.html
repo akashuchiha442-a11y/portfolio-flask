@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+     <link rel="stylesheet"href="{{ url_for('static',filename='style.css')}}">
+</head>
+<body>
+    {% extends 'base.html' %}
+{% block content %}
+<section class="resume">
+  <h1>Resume</h1>
+
+  <a href="/static/resume.pdf" class="download-btn">
+    Download Resume
+  </a>
+</section>
+<section class="Contact">
+    <h1>Contact</h1>
+    <div class="Contact-section">
+       <h3>Email: <a href="mailto:akashuchiha442@gmail.com" class="email-link">
+            akashuchiha442@gmail.com</a></h3>
+        <h3>Phone Number:7418849102</h3>
+        <h3>Linkdin: <a href="https://www.linkedin.com/in/a-thirumani-akash-b24513371" class="linkdin-link">https://www.linkedin.com/in/a-thirumani-akash-b24513371</a></h3>
+    </div>
+</section>
+
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet"href="{{ url_for('static',filename='style.css')}}">
+</head>
+<body>
+    {% extends 'base.html' %}
+{% block content %}
+<section class="projects">
+    <h1>PROJECTS</h1>
+    <div class="project-grid">
+    <div class="project-card">
+        <h3>Personal Portfolio Website</h3>
+        <p>Personal porfolio built using Flask, HTML and CSS to showcase my skills, education and projects.</p>
+        <ul>
+            <li>Flask & Jinja templates</li>
+            <li>Reusable base layout</li>
+            <li>Responsive navigation</li>
+        </ul>
+        <div class="links">
+            <a href="#">GitHub</a>
+        </div>
+        <p><strong>Status:</strong>In Progress</p>
+    </div>
+    </div>
+</section>
+<section class="projects">
+    <div class="project-grid">
+    <div class="project-card">
+        <h3>My Reading Hub</h3>
+        <p>Flask based content showcase website featuring books and articles with responsive design, reusable templates and UI enchantments such as dark mode and dynamic navigation.</p>
+        <ul>
+            <li>Flask & Jinja templates</li>
+            <li>Reusable base layout</li>
+            <li>Responsive navigation</li>
+        </ul>
+        <div class="links">
+            <a href="#">GitHub</a>
+        </div>
+        <p><strong>Status:</strong>completed</p>
+    </div>
+    </div>
+</section>
+ {% endblock %}
+</body>
+</html>

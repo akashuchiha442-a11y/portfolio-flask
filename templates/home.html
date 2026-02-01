@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet"href="{{ url_for('static',filename='style.css')}}">
+</head>
+<body>
+    {% extends 'base.html' %}
+{% block content %}
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Hi, I'm A.Thirumani Akash</h1>
+            <h2>Web Developer(Python & Flask)</h2>
+            <p>I build clean and simple web applications using Python, Flask, HTML and CSS. I'm passionate about learning and improving my full-stack skills.</p>
+            <a href="/projects"class="btn">View My Projects</a>
+        </div>
+        <div class="hero-image">
+            <img src="/static/image/akash.png" alt="profile photo">
+        </div>
+    </div>
+   {% endblock %}
+</body>
+</html>
