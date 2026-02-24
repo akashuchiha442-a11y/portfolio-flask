@@ -7,6 +7,7 @@
     <link rel="stylesheet"href="{{ url_for('static',filename='style.css')}}">
 </head>
 <body>
+  <main class="container">
     {% extends 'base.html' %}
 {% block content %}
     <section class="about-section">
@@ -57,7 +58,7 @@
     <li>Learning New Languages</li>
   </ul>
 </section>
-     
 {% endblock %}
+</main>
 </body>
 </html>

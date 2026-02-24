@@ -7,6 +7,7 @@
     <link rel="stylesheet"href="{{ url_for('static',filename='style.css')}}">
 </head>
 <body>
+    <main class="container">
     {% extends 'base.html' %}
 {% block content %}
 <section class="projects">
@@ -26,9 +27,6 @@
         <p><strong>Status:</strong>In Progress</p>
     </div>
     </div>
-</section>
-<section class="projects">
-    <div class="project-grid">
     <div class="project-card">
         <h3>My Reading Hub</h3>
         <p>Flask based content showcase website featuring books and articles with responsive design, reusable templates and UI enchantments such as dark mode and dynamic navigation.</p>
@@ -42,8 +40,8 @@
         </div>
         <p><strong>Status:</strong>completed</p>
     </div>
-    </div>
 </section>
  {% endblock %}
+</main>
 </body>
 </html>
