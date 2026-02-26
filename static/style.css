@@ -550,3 +550,410 @@ main {
     margin: 40px auto;
     padding: 0 8%;
 }
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 85%;
+    max-width: 1100px;
+    margin: 20px auto;   /* centers horizontally */
+}
+.container {
+    margin: 0 auto;
+    padding-top: 15px;
+}
+.container {
+    width: 85%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.navbar {
+    padding: 10px 20px;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    padding: 12px 20px;
+}
+
+.container {
+    width: 85%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+/* Add this to your main CSS file */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This centers everything horizontally */
+    padding-top: 50px;
+    text-align: center;
+}
+
+.project-card {
+    text-align: left; /* Keep the bullet points left-aligned inside a centered card */
+    width: 90%;
+    max-width: 700px;
+    margin-bottom: 30px;
+    /* Add a subtle shadow to match the professional look */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+.resume-section {
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 20px;
+}
+
+.download-btn {
+    margin-bottom: 30px;
+}
+
+.resume-card {
+    background: white;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: left;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.btn {
+    background: #2c7be5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+.nav-links a {
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #2c7be5;
+}
+/*:root {
+    --primary: #2563EB;
+    --primary-dark: #1D4ED8;
+    --navbar-bg: #1E293B;
+    --bg-light: #F8FAFC;
+    --text-dark: #334155;
+    --white: #FFFFFF;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+.navbar {
+    background: var(--navbar-bg);
+    padding: 14px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.logo {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #cbd5e1;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--white);
+}
+.resume-card,
+.project-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease;
+}
+
+.resume-card:hover,
+.project-card:hover {
+    transform: translateY(-5px);
+}
+.btn {
+    background: var(--primary);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+*/
+:root {
+    --bg-main: #0f172a;        /* deep dark blue */
+    --bg-card: #1e293b;        /* slightly lighter */
+    --navbar-bg: #111827;
+    --primary: #3b82f6;        /* modern blue accent */
+    --primary-hover: #2563eb;
+    --text-main: #e2e8f0;
+    --text-muted: #94a3b8;
+    --border-color: #334155;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+}
+.navbar {
+    background: var(--navbar-bg);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.logo {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+.resume-card,
+.project-card {
+    background: var(--bg-card);
+    border-radius: 12px;
+    padding: 25px;
+    border: 1px solid var(--border-color);
+    transition: 0.3s ease;
+}
+
+.resume-card:hover,
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+}
+.btn {
+    background: var(--primary);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--primary-hover);
+    box-shadow: 0 0 12px rgba(59,130,246,0.5);
+}
+h1, h2, h3 {
+    color: var(--text-main);
+}
+
+p {
+    color: var(--text-muted);
+}
+.hero h1 {
+    text-shadow: 0 0 8px rgba(59,130,246,0.4);
+}
+/* Global Body Settings */
+body {
+    background-color: #1a1a2e; /* Matches your dark navbar/background */
+    color: #e0e0e0; /* Light grey text for better readability than pure white */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Fix the Home Page "White Box" mismatch */
+.container, .hero {
+    background-color: transparent !important; /* Removes the white background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Home Page Text Colors */
+.hero h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+}
+
+.hero h2 {
+    color: #4db8ff; /* A bright accent blue for your role */
+}
+
+/* Project Card Text Colors */
+.project-card {
+    background-color: #16213e; /* Slightly lighter than body for depth */
+    border: 1px solid #0f3460;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffffff; /* Forces white text inside cards */
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    color: #4db8ff; /* Keeps headings consistent with Home Page */
+}
+
+.project-card p, .project-card li {
+    color: #b0b0b0; /* Softer white for descriptions to create hierarchy */
+}
+
+/* Button Styling (Consistent across pages) */
+.btn, .btn-small {
+    background-color: #007bff;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+/* About Page Container */
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Adds even spacing between cards */
+}
+
+/* Consistent Card Styling */
+.about-card {
+    background-color: #16213e; /* Match your Project cards */
+    border: 1px solid #1f2937;
+    border-left: 4px solid #4db8ff; /* Japanese-inspired accent line */
+    padding: 30px;
+    border-radius: 8px;
+    color: #ffffff; /* Explicitly set white text for readability */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-card h2 {
+    color: #4db8ff; /* Blue accent for headers */
+    margin-bottom: 20px;
+    border-bottom: 1px solid #1f2937;
+    padding-bottom: 10px;
+}
+
+.about-card h3 {
+    color: #e0e0e0;
+    margin-top: 15px;
+}
+
+.about-card p {
+    color: #b0b0b0; /* Softer grey for descriptions */
+}
+
+/* Skills Tags Styling */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-grid span {
+    background: #0f3460;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid #4db8ff;
+}
+
+/* Language List */
+.language-list {
+    list-style: none;
+    padding: 0;
+}
+
+.language-list li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.japanese-badge {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    writing-mode: vertical-rl; /* This makes the text vertical */
+    text-orientation: upright;
+    font-weight: bold;
+    color: #4db8ff;
+    border-left: 1px solid #4db8ff;
+    padding-left: 10px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+.project-card {
+    border-left: 4px solid #4db8ff; /* A clean blue accent line */
+    background: rgba(255, 255, 255, 0.03); /* Translucent dark feel */
+    border-radius: 0 8px 8px 0; /* Only round the right corners */
+    padding: 25px;
+    margin-bottom: 20px;
+}
