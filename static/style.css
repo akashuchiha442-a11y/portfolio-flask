@@ -1036,3 +1036,21 @@ body {
 html {
     scroll-behavior: smooth;
 }
+.hobby-tags span {
+    display: inline-block;
+    background: #1e293b;
+    border: 1px solid #00f0ff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 0.9rem;
+    color: #00f0ff;
+}
+.hobby-list{
+  list-style: none;
+  padding: 0;
+}
+.hobby-list li{
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
