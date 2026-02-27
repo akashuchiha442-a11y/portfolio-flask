@@ -936,6 +936,14 @@ body {
     margin-bottom: 10px;
     padding-left: 10px;
 }
+.about-card{
+    transition: 0.3s ease;
+}
+.about-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px  #0056b3;
+    border-color:  #0056b3;
+}
 .japanese-badge {
     position: fixed;
     right: 20px;
@@ -956,4 +964,75 @@ body {
     border-radius: 0 8px 8px 0; /* Only round the right corners */
     padding: 25px;
     margin-bottom: 20px;
+}
+/* Ensure this is inside your @media (max-width: 768px) section */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide the menu by default on mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #1a1a2e;
+        text-align: center;
+        padding: 20px 0;
+        z-index: 1000;
+    }
+
+    /* Only show it when the 'active' class is added via JavaScript */
+    .nav-links.active {
+        display: flex;
+    }
+}
+/* About Section Consistency */
+.about-section {
+    background: transparent !important; /* Removes any white background block */
+    color: #ffffff;
+    padding: 40px 20px;
+}
+
+.item {
+    background-color: #16213e; /* Dark card color like your Projects page */
+    border-left: 4px solid #4db8ff; /* Your blue accent */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    color: #ffffff !important; /* Forces text to be white */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.item h3 {
+    color: #4db8ff; /* Highlighted headers */
+    margin-bottom: 10px;
+}
+
+.item p {
+    color: #b0b0b0; /* Light grey for body text */
+}
+/* Skills Tags Fix */
+.skills span {
+    background: #0f3460;
+    border: 1px solid #4db8ff;
+    color: white;
+    padding: 5px 15px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 20px;
+}
+.hero-text p {
+    color: #cbd5e1;          /* softer light gray */
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 15px auto;
+    opacity: 0.9;
+}
+.hero-text {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    border-radius: 12px;
+}
+html {
+    scroll-behavior: smooth;
 }
